@@ -8,9 +8,9 @@ function App() {
 
   return (
     <div>
-      <Header />
       <PokemonProvider>
         <Router>
+          <Header />
           <AppRoutes />
         </Router>
       </PokemonProvider>

@@ -27,7 +27,7 @@ const PokemonProvider = ({ children }) => {
         fetchTypes();
     }, []);
 
-    // 🔹 Main fetch Pokémon logic (with pagination, filter, search)
+    //  Main fetch Pokémon logic (with pagination, filter, search)
     useEffect(() => {
         const fetchPokemon = async () => {
             try {
