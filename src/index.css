@@ -6,3 +6,9 @@
     --font-inter: "Press Start 2P", system-ui;
     --font-pokemon: 'Pokemon Solid', sans-serif;
 }
+
+.pokemon-text {
+  color: #FFCC00; /* Yellow */
+  -webkit-text-stroke: 1px #3466AF; /* Thick Blue Border */
+  text-shadow: 2px 2px 0 #3466AF; /* Soft shadow for depth */
+}

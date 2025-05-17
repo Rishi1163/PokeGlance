@@ -50,7 +50,7 @@ const Home = () => {
                             />
                             <button
                                 onClick={handleSearchButtonClick}
-                                className='py-1 pb-2 px-4 rounded-xl bg-red-500 text-white font-pokemon tracking-widest'
+                                className='py-1 pb-2 px-4 rounded-xl bg-red-500 text-white font-pokemon tracking-widest cursor-pointer'
                             >
                                 Search
                             </button>
@@ -78,7 +78,7 @@ const Home = () => {
 
                     {/* Pokémon Grid */}
                     <div className={`${pokemonList.length > 0
-                        ? 'my-6 grid grid-cols-2 md:grid-cols-4 pr-4 md:pr-0 lg:grid-cols-5 lg:px-5 py-2 gap-10'
+                        ? 'my-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 px-3 sm:px-5 md:px-10 justify-items-center'
                         : 'flex justify-center px-3 py-2 min-h-[50vh]'
                         }`}>
                         {pokemonList.length > 0 ? (

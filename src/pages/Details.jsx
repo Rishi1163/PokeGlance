@@ -57,11 +57,11 @@ const Details = () => {
       <div className="absolute inset-0 opacity-60 ">
         <img src={bg} alt="" className='min-w-full h-full object-cover' />
       </div>
-      <button onClick={() => navigate(-1)} className="self-start mb-4 px-4 py-2 bg-white rounded-full shadow hover:bg-gray-100">
+      <button onClick={() => navigate(-1)} className="self-start mb-4 px-4 py-2 bg-white rounded-full shadow hover:bg-gray-100 relative z-10">
         ← Back
       </button>
 
-      <div className="flex flex-col md:flex-row gap-8 items-center">
+      <div className="flex flex-col md:flex-row gap-8 items-center ">
         <div className="bg-[#1a1a2e] rounded-xl p-4 shadow-lg relative">
           <button
             className='absolute top-2 right-2 p-2 rounded-full cursor-pointer z-50'
@@ -77,7 +77,7 @@ const Details = () => {
         </div>
 
         {/* Info Section */}
-        <div className="text-left">
+        <div className="text-left px-3 relative z-10">
           <h2 className="text-4xl capitalize font-bold font-pokemon tracking-widest mb-4">{pokemon.name}</h2>
 
           {/* Types */}
@@ -97,7 +97,7 @@ const Details = () => {
           <div className="mb-4">
             <strong>Abilities:</strong>{" "}
             {pokemon.abilities.map((a, i) => (
-              <span key={i} className="inline-block bg-blue-200 text-blue-800 px-2 py-1 rounded-full mr-2">
+              <span key={i} className="inline-block bg-blue-200 text-blue-800 px-2 py-1 rounded-full mr-2 font-bold">
                 {a.ability.name}
               </span>
             ))}
