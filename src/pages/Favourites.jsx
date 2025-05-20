@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import bg from '../assets/img/bg-pokemon.png'
 import Pokecard from '../components/Pokecard';
+import noPoke from '../assets/img/Psyduck.png'
 
 const Favourites = () => {
 
@@ -31,7 +32,12 @@ const Favourites = () => {
         {wishlistPokemons.length > 0 ? (
           wishlistPokemons.map(poke => <Pokecard key={poke.id} pokemon={poke} />)
         ) : (
-          <p>No Pokémon in wishlist.</p>
+          <div className='relative z-50 font-pokemon tracking-widest flex justify-center items-center md:w-[97vw] md:h-[50vh] text-2xl flex-col md:mt-8 w-[90vw]'>
+            <span className=''>
+              <img src={noPoke} alt="" className='md:w-60 w-40'/>
+            </span>
+            <p className='text-center'>No Pokemon's in pokevault!!</p>
+          </div>
         )}
       </div>
     </div>
