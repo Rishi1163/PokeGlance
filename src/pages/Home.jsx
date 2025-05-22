@@ -24,8 +24,9 @@ const Home = () => {
         }
     };
 
-    const handleSearchButtonClick = () => {
-        fetchPokemonData(searchQuery, selectedType, currentPage);
+    const handleSearchButtonClick = async () => {
+        const query = searchQuery
+        await fetchPokemonData(query, selectedType, currentPage);
     };
 
     return (
