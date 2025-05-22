@@ -36,7 +36,7 @@ const Favourites = () => {
             <span className=''>
               <img src={noPoke} alt="" className='md:w-60 w-40'/>
             </span>
-            <p className='text-center'>No Pokemon's in pokevault!!</p>
+            <p className='text-center'>No Pokemon's in your pokevault!!</p>
           </div>
         )}
       </div>

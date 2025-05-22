@@ -36,11 +36,11 @@ const Home = () => {
             </div>
 
             {/* Actual page content */}
-            <div className='relative z-50 px-3 pb-10'>
-                <div className='pt-28'>
+            <div className='relative px-3 pb-10'>
+                <div className='pt-32'>
                     {/* Search & Filter */}
                     <div className='flex flex-col lg:flex-row justify-around'>
-                        <div className='flex items-center justify-center'>
+                        <div className='z-50 flex items-center justify-center'>
                             <input
                                 type="text"
                                 placeholder='Search for a Pokémon by name'
@@ -56,7 +56,7 @@ const Home = () => {
                             </button>
                         </div>
 
-                        <div className='flex justify-center mx-5 my-4'>
+                        <div className='z-50 flex justify-center mx-5 my-4'>
                             <select
                                 name="Type"
                                 value={selectedType}
