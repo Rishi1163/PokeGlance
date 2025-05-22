@@ -86,7 +86,7 @@ const Home = () => {
                                 <Pokecard key={poke.id} pokemon={poke} />
                             ))
                         ) : (
-                            <p className='font-bold text-xl'>No Pokémon found. Try searching or select a type!</p>
+                            <p className='font-bold text-xl'>Loading Pokemons....</p>
                         )}
                     </div>
 
