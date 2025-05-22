@@ -36,7 +36,7 @@ const Home = () => {
             </div>
 
             {/* Actual page content */}
-            <div className='relative z-10 px-3 pb-10'>
+            <div className='relative z-50 px-3 pb-10'>
                 <div className='pt-28'>
                     {/* Search & Filter */}
                     <div className='flex flex-col lg:flex-row justify-around'>
@@ -44,7 +44,7 @@ const Home = () => {
                             <input
                                 type="text"
                                 placeholder='Search for a Pokémon by name'
-                                className='border w-md p-2 rounded-xl outline-red-600 mx-3'
+                                className='outline outline-black w-md p-2 rounded-xl mx-3'
                                 onChange={(e) => setSearchQuery(e.target.value)}
                                 value={searchQuery}
                             />
